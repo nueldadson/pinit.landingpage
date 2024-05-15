@@ -8,8 +8,8 @@ import {
 	Services,
 	SpecialOffer,
 	Subscribe,
-	SuperQuality,
 } from "./sections";
+// SuperQuality,
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SwipableNotification from "./components/SwipeableNotification";
@@ -58,9 +58,9 @@ const App = () => {
 			<section className="padding">
 				<Features />
 			</section>
-			<section className="padding">
+			{/* <section className="padding">
 				<SuperQuality />
-			</section>
+			</section> */}
 			<section className="padding-x py-10">
 				<Services />
 			</section>
