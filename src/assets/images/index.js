@@ -1,3 +1,7 @@
+import herobg from "./pinitBG.jpg";
+import navbg from "./navlogo.png";
+import navbg2 from "./navlogo2.png";
+
 import bigShoe1 from "./big-shoe1.png";
 import bigShoe2 from "./big-shoe2.png";
 import bigShoe3 from "./big-shoe3.png";
@@ -22,6 +26,9 @@ import thumbnailShoe2 from "./thumbnail-shoe2.png";
 import thumbnailShoe3 from "./thumbnail-shoe3.png";
 
 export {
+	herobg,
+	navbg,
+	navbg2,
 	bigShoe1,
 	bigShoe2,
 	bigShoe3,

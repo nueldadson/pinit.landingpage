@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import PopularProducts from "./PopularProducts";
+import PopularProducts from "./Features";
 import Sidebar from "./Sidebar";
 import SuperQuality from "./SuperQuality";
 import Services from "./Services";

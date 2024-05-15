@@ -1,0 +1,11 @@
+ .bg-gradient-radial-custom {
+     background: rgb(13, 3, 177);
+     background: radial-gradient(circle, rgba(13, 3, 177, 1) 15%, rgba(0, 0, 60, 1) 48%, rgba(1, 0, 20, 1) 65%);
+ }
+
+ .bgHero{
+    background: url('./../../src/assets/images/pinitBG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }

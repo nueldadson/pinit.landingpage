@@ -1,20 +1,44 @@
 import { Nav } from "./components";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
 	Sidebar,
 	CustomerReviews,
 	Footer,
 	Hero,
-	PopularProducts,
 	Services,
 	SpecialOffer,
 	Subscribe,
 	SuperQuality,
 } from "./sections";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import SwipableNotification from "./components/SwipeableNotification";
 import { Fade, Slide, Reveal, Bounce } from "react-awesome-reveal";
 import "./app.css";
+import Features from "./sections/Features";
 
 const App = () => {
+	useEffect(() => {
+		const timer = setTimeout(() => {
+      toast(
+        ({ closeToast }) => (
+          <SwipableNotification
+            message="Join Our Waiting List Now!!"
+            onDismiss={closeToast}
+          />
+        ),
+        {
+          autoClose: false,
+		  position:"bottom-center",
+		   // Disable auto-close to allow swipe to dismiss
+        }
+      );
+    }, 1500); // 1-second delay
+    // Cleanup timeout on component unmount
+    return () => clearTimeout(timer);
+	}, []);
+
+
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => {
@@ -24,14 +48,15 @@ const App = () => {
 	return (
 		<main className="relative">
 			<Nav isOpen={isOpen} toggle={toggle} />
+			<ToastContainer className="text-sm"/>
 			<Sidebar isOpen={isOpen} toggle={toggle} />
 			<Fade direction="in" duration={2000}>
-				<section className="xl:padding-l wide:padding-r padding-b">
+				<section className="">
 					<Hero />
 				</section>
 			</Fade>
 			<section className="padding">
-				<PopularProducts />
+				<Features />
 			</section>
 			<section className="padding">
 				<SuperQuality />

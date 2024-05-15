@@ -1,5 +1,5 @@
 import React from "react";
-import { headerLogo } from "../assets/images";
+import { navbg, navbg2 } from "../assets/images";
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +9,7 @@ import "./navs.css";
 const Nav = ({ isOpen, toggle }) => {
 	const [isFixed, setIsFixed] = useState(false);
 
-	const scrollThreshold = 100; // Adjust this value based on when you want the navbar to become fixed
+	const scrollThreshold = 60; // Adjust this value based on when you want the navbar to become fixed
 
 	const handleScroll = () => {
 		if (window.scrollY > scrollThreshold) {
@@ -28,24 +28,24 @@ const Nav = ({ isOpen, toggle }) => {
 
 	return (
 		<header
-			className={`padding-x py-4 z-10 w-full ${
-				isFixed ? "fixed top-0 bg-white shadow-md" : " absolute"
+			className={`padding-x py-4 z-10 w-full justify-center flex ${
+				isFixed ? "fixed top-0" : " absolute"
 			}`}
 		>
-			<nav className="flex justify-between items-center max-container">
-				<a href="/">
+			<nav className="w-[75%] flex justify-between items-center p-1 h-[45px] bg-gray-500 border-gray-500 bg-opacity-25 backdrop-blur-md border rounded-full max-sm:h-[40px] max-md:h-[55px]">
+				<a href="/" className="h-full w-[17%] max-lg:w-[25%]  max-sm:w-[35%] flex justify-center items-center rounded-full ">
 					<img
-						src={headerLogo}
+						src={navbg}
 						alt="logo"
-						className="mt-1 w-[250px] h-[50px]"
+						className="w-ull "
 					/>
 				</a>
-				<ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+				<ul className="flex-1 flex justify-center items-center gap-10 max-lg:hidden">
 					{navLinks.map((item) => (
 						<li key={item.label}>
 							<a
 								href={item.href}
-								className="font-montserrat leading-normal text-lg text-black font-bold"
+								className="font-montserrat text-sm text-white font-semibold"
 							>
 								{item.label}
 							</a>
@@ -53,13 +53,11 @@ const Nav = ({ isOpen, toggle }) => {
 					))}
 				</ul>
 				<div
-					className={`flex  font-bold gap-2 text-lg leading-normal font-montserrat max-lg:hidden wide:mr-24 ${
-						isFixed ? " text-coral-red " : "text-white"
+					className={`flex text-sm items-center justify-center font-bold leading-normal font-montserrat w-[17%] h-full rounded-full max-lg:hidden ${
+						isFixed ? " text-white bg-[#0437f2] " : "text-[#008080] bg-white"
 					}`}
 				>
-					<a href="https://aquamarine-chaja-0119a9.netlify.app/">Sign in</a>
-					<span>/</span>
-					<a href="https://aquamarine-chaja-0119a9.netlify.app/">Explore now</a>
+					Join Waitlist
 				</div>
 				<div className="">
 					{/* <img src={hamburger} alt="hamburger icon" width={25} height={25} /> */}
