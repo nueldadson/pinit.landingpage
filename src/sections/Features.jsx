@@ -6,7 +6,7 @@ const Features = () => {
 		<Fade direction="in" duration={300}>
 			<section id="features" className=" max-sm:mt-12 scale-95">
 						<div className="flex justify-between items-center">
-						<h2 className=" lg:text-[45px] md:text-[40px] font-bold text-[30px]">
+						<h2 className=" lg:text-[45px] md:text-[40px] font-bold text-[25px]">
 							Why <span className="text-[#0437f2] font-bold"> Choose </span> Us?
 						</h2>
 						<img className="w-[90px]" src={navbg2} alt="" />
