@@ -58,7 +58,7 @@ const App = () => {
 			<section className="padding">
 				<Features />
 			</section>
-			<section className="bg-pale-blue padding">
+			<section className="bg-[#f8f8f8] padding">
 				<Aboutus />
 			</section>
 			{/* <section className="padding">

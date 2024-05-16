@@ -35,3 +35,10 @@
     z-index: 9 !important;
     right: 20px;
 }
+
+.aboutus{
+    background: url('../src/assets/images/aboutus.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

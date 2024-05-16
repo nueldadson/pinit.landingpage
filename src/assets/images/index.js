@@ -2,6 +2,7 @@ import herobg from "./pinitBG.jpg";
 import navbg from "./navlogo.png";
 import navbg2 from "./navlogo2.png";
 import automaten from "./automaten.png";
+import aboutus from "./aboutus.jpg";
 
 import bigShoe1 from "./big-shoe1.png";
 import bigShoe2 from "./big-shoe2.png";
@@ -31,6 +32,7 @@ export {
 	navbg,
 	navbg2,
 	automaten,
+	aboutus,
 	bigShoe1,
 	bigShoe2,
 	bigShoe3,
