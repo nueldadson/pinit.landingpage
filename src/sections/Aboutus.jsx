@@ -5,10 +5,10 @@ const Aboutus = () => {
 	return (
 		<Slide direction="left">
 		<section id="about-us" className=" p-4 max-container ">
-			<p className="mb-2 text-slate-gray font-bold">About Us</p>
+			<p className="mb-2 text-[#0437f2] font-bold">About Us</p>
 			<div className="grid lg:grid-cols-2 text-black md:grid-cols-2 sm:grid-cols-2 grid-cols-1  gap-16">
 				<div>
-					<p className="font-bold lg:text-4xl text-3xl sm:text-4xl mb-8">
+					<p className="font-extrabold lg:text-4xl text-3xl sm:text-4xl mb-4">
 						Our Architectural Journey
 					</p>
 					<p className="w-[80%]">At PinIt, we're passionate about helping individuals and families avoid the stress and inconvenience of lost items. Our mission is to provide a simple yet effective solution for managing and retrieving lost belongings.</p>

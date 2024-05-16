@@ -8,13 +8,13 @@ const FAQsectionn = styled.div`
   background-color: white;
   
   @media screen and (max-width: 600px) {
-    padding: 2.5rem;
+    padding: 1rem;
   }
   @media screen and (max-width: 400px) {
-      padding: 1.5rem;
+      padding: 0.8rem;
     }
   @media screen and (max-width: 300px) {
-      padding: 0.8rem;
+      padding: 0.4rem;
     }
 `;
 const FAQHeading = styled.h1`

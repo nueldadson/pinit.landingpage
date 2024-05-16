@@ -1,8 +1,6 @@
 .swipable-notification {
-    background-color: #008080;
-    font-weight: bold;
-    
-    color: #fff;
+    background-color: white;
+    color: #0437f2;
     padding: 15px;
     border-radius: 5px;
     width: 100%;
@@ -10,6 +8,11 @@
     opacity: 1 !important;
     position: relative;
     transition: transform 4s ease-in-out;
+    font-weight: 800;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .Toastify__toast{

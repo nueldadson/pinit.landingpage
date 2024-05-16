@@ -14,6 +14,7 @@ import SwipableNotification from "./components/SwipeableNotification";
 import { Fade, Slide, Bounce } from "react-awesome-reveal";
 import "./app.css";
 import FAQsSection from "./sections/FaqsSection";
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
 	useEffect(() => {
@@ -21,7 +22,7 @@ const App = () => {
       toast(
         ({ closeToast }) => (
           <SwipableNotification
-            message="Join Our Waiting List Now!!"
+            message={`Join Our Waiting List Now!!`}
             onDismiss={closeToast}
           />
         ),
@@ -31,7 +32,7 @@ const App = () => {
 		   // Disable auto-close to allow swipe to dismiss
         }
       );
-    }, 1500); // 1-second delay
+    }, 4000); // 1-second delay
     // Cleanup timeout on component unmount
     return () => clearTimeout(timer);
 	}, []);
