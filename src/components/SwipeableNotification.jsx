@@ -8,7 +8,7 @@ const SwipableNotification = ({ message, onDismiss }) => {
   });
 
   return (
-    <div {...handlers} className="swipable-notification">
+    <div {...handlers} className="swipable-notification text-center">
       {message}
     </div>
   );

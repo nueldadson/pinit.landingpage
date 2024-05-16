@@ -56,7 +56,7 @@ const Nav = ({ isOpen, toggle }) => {
 				</ul>
 				<div
 					className={`flex text-sm items-center justify-center font-bold leading-normal font-montserrat w-[17%] h-full rounded-full max-lg:hidden ${
-						isFixed ? " text-white bg-[#0437f2] " : "text-[#008080] bg-white"
+						isFixed ? " text-white bg-[#0437f2] " : "text-[#0437f2] bg-white"
 					}`}
 				>
 					Join Waitlist
