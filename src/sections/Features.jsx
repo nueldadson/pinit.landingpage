@@ -56,7 +56,7 @@ const Features = () => {
 							</Slide>
 							</div>
 						</div>
-							<div className="p-8 w-[max-content] mt-4 bg-gray-100 rounded-[20px] shadow-[#0080807a] shadow-xl px-10 py-12">
+							<div className="p-8 mt-4 bg-gray-100 rounded-[20px] shadow-[#0080807a] shadow-xl px-10 py-12">
 							<Slide direction="down">
 								<div className="w-11 h-11 flex justify-center items-center bg-white rounded-full mb-4">
 									<img
