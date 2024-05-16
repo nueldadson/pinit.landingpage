@@ -4,6 +4,7 @@ import {
 	Hero,
 	Sidebar,
 	Features,
+	Howitworks,
 	Aboutus,
 	Subscribe,
 	Footer,
@@ -56,6 +57,9 @@ const App = () => {
 			</Fade>
 			<section className="padding">
 				<Features />
+			</section>
+			<section className="padding">
+				<Howitworks />
 			</section>
 			<section className="bg-[#f8f8f8] padding">
 				<Aboutus />
