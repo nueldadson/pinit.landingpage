@@ -2,7 +2,7 @@ import { Nav } from "./components";
 import { useEffect, useState } from "react";
 import {
 	Sidebar,
-	CustomerReviews,
+	Aboutus,
 	Footer,
 	Hero,
 	Services,
@@ -58,6 +58,9 @@ const App = () => {
 			<section className="padding">
 				<Features />
 			</section>
+			<section className="bg-pale-blue padding">
+				<Aboutus />
+			</section>
 			{/* <section className="padding">
 				<SuperQuality />
 			</section> */}
@@ -66,9 +69,6 @@ const App = () => {
 			</section>
 			<section className="padding">
 				<SpecialOffer />
-			</section>
-			<section className="bg-pale-blue padding">
-				<CustomerReviews />
 			</section>
 			<section className="padding-x sm:py-32 py-16 w-full">
 				<Subscribe />
