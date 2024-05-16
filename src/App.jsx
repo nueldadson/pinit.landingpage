@@ -1,21 +1,19 @@
 import { Nav } from "./components";
 import { useEffect, useState } from "react";
 import {
-	Sidebar,
-	Aboutus,
-	Footer,
 	Hero,
-	Services,
-	SpecialOffer,
+	Sidebar,
+	Features,
+	Aboutus,
 	Subscribe,
+	Footer,
 } from "./sections";
-// SuperQuality,
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SwipableNotification from "./components/SwipeableNotification";
-import { Fade, Slide, Reveal, Bounce } from "react-awesome-reveal";
+import { Fade, Slide, Bounce } from "react-awesome-reveal";
 import "./app.css";
-import Features from "./sections/Features";
+import FAQsSection from "./sections/FaqsSection";
 
 const App = () => {
 	useEffect(() => {
@@ -61,19 +59,13 @@ const App = () => {
 			<section className="bg-[#f8f8f8] padding">
 				<Aboutus />
 			</section>
-			{/* <section className="padding">
-				<SuperQuality />
-			</section> */}
-			<section className="padding-x py-10">
-				<Services />
-			</section>
 			<section className="padding">
-				<SpecialOffer />
+				<FAQsSection />
 			</section>
 			<section className="padding-x sm:py-32 py-16 w-full">
 				<Subscribe />
 			</section>
-			<section className=" bg-black padding-x padding-t pb-8">
+			<section className=" bg-black padding-x padding-t pb-8 " id="footer">
 				<Footer />
 			</section>
 		</main>

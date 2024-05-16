@@ -1,25 +1,19 @@
 import styled from "styled-components";
-// import { Link as LinkS } from 'react-scroll';
 import { FaInstagram, FaLinkedin, FaTimes, FaTwitter } from "react-icons/fa";
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled.div`
 	position: fixed;
 	z-index: 99999999999999999999;
-	width: 100%;
-	height: 100%;
-	background: #ff6600;
-	/* display: grid; */
-	/* align-items: center; */
+	width: 100% !important;
+	height: 100% !important;
 	top: 0;
 	transition: 0.7s ease-in-out;
 	top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 	opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
-	/* top: 0; */
 `;
 
 export const CloseIcon = styled(FaTimes)`
 	color: #fff;
-	/* position: absolute; */
 `;
 export const Icon = styled.div`
 	z-index: 10000 !important;
@@ -55,26 +49,17 @@ export const SidebarLink = styled.a`
 	transition: 0.2s ease-in-out;
 	text-decoration: none;
 	color: #fff;
-	/* margin-left: -290px; */
 	cursor: pointer;
 
-	/* @media screen and (max-width: 400px){
-     margin-left: -240px;
-  }
-  @media screen and (max-width: 310px){
-     margin-left: -190px;
-  } */
-
 	&:hover {
-		/* color: red; */
 		font-weight: 800;
+		color: #008080;
 		transition: 0.2s ease-in-out;
 	}
 `;
 
 export const SidebarIcon = styled.div`
 	display: flex;
-	/* flex-direction: row; */
 	align-items: center;
 	justify-content: center;
 	font-size: 2.4rem;

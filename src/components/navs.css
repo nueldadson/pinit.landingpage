@@ -1,17 +1,14 @@
 .iconn {
 	display: none;
-	color: #ff6600;
+	color: white;
 	z-index: 50000000;
 }
 @media screen and (max-width: 1023px) {
 	.iconn {
 		display: block;
-		/* position: absolute; */
-		color: #ff6600;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 15%);
-		font-size: 2rem;
+		color: white;
+		transform: translate(-60%, 0%);
+		font-size: 1.6rem;
 		cursor: pointer;
 	}
 }

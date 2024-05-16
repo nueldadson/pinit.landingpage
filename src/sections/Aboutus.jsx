@@ -1,7 +1,5 @@
-import { Bounce, Slide } from "react-awesome-reveal";
-import { ReviewCard } from "../components";
-import { aboutus } from "../assets/images";
-import { reviews } from "../constants";
+import { Slide } from "react-awesome-reveal";
+
 
 const Aboutus = () => {
 	return (

@@ -32,7 +32,7 @@ const Nav = ({ isOpen, toggle }) => {
 				isFixed ? "fixed top-0" : " absolute"
 			}`}
 		>
-			<nav className="w-[75%] flex justify-between items-center p-1 h-[45px] bg-gray-500 border-gray-500 bg-opacity-25 backdrop-blur-[3px] border rounded-full max-sm:h-[40px] max-md:h-[55px]">
+			<nav className="w-[75%] flex justify-between items-center p-1 h-[45px] bg-gray-500 border-[#0437f2] bg-opacity-25 backdrop-blur-[3px] border rounded-full max-sm:h-[40px] max-md:h-[55px]">
 				<a href="/" className="h-full w-[17%] max-lg:w-[25%]  max-sm:w-[35%] flex justify-center items-center rounded-full ">
 					<img
 						src={navbg}
@@ -45,7 +45,9 @@ const Nav = ({ isOpen, toggle }) => {
 						<li key={item.label}>
 							<a
 								href={item.href}
-								className="font-montserrat text-sm text-white font-semibold"
+								className={` text-xs font-bold ${
+				isFixed ? "text-[#008080] bg-white py-1 px-2 rounded-lg" : "text-white"
+			}`}
 							>
 								{item.label}
 							</a>
@@ -60,8 +62,6 @@ const Nav = ({ isOpen, toggle }) => {
 					Join Waitlist
 				</div>
 				<div className="">
-					{/* <img src={hamburger} alt="hamburger icon" width={25} height={25} /> */}
-					{/* dcrfrfrubububububbub */}
 					<FontAwesomeIcon
 						icon={isOpen ? faTimes : faBars}
 						className="iconn"

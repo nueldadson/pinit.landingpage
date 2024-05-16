@@ -1,20 +1,29 @@
-// import { products } from "../constants";
-// import { PopularProductCard } from "../components";
-import { Fade, Slide, Reveal, Bounce } from "react-awesome-reveal";
-import { automaten } from "../assets/images";
+import { Fade, Slide} from "react-awesome-reveal";
+import { automaten, navbg2 } from "../assets/images";
 
 const Features = () => {
 	return (
 		<Fade direction="in" duration={300}>
 			<section id="features" className=" max-sm:mt-12">
 					<div className="flex flex-col justify-start gap-5">
-						<h2 className="text-[35px] font-palanquin font-bold">
+						<div className="flex justify-between items-center">
+						<h2 className=" lg:text-[35px] md:text-[35px] font-bold text-[25px]">
 							Why <span className="text-[#0437f2] font-bold"> Choose </span> Us?
 						</h2>
-						<div className="grid lg:grid-cols-2 text-black md:grid-cols-2 sm:grid-cols-2 grid-cols-1 sm:gap-4 gap-4">
-							<Fade direction="in" duration={900}>
-							<div className="p-8 bg-gray-100 rounded-[40px]">
-								<p className="text-lg font-bold">
+						<img className="w-[90px]" src={navbg2} alt="" />
+						</div>
+						<div className="grid lg:grid-cols-2 text-black md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-12">
+							<div className="bg-gray-100 rounded-[20px] shadow-[#0080807a] shadow-xl px-10 py-12">
+							<Fade direction="in" duration={900} className="">
+								<div className="w-11 h-11 flex justify-center items-center bg-white rounded-full mb-4">
+									<img
+										src={navbg2}
+										width={34}
+										height={34}
+										className="animate-spin "
+									/>
+								</div>
+								<p className="text-2xl font-bold">
 									Pin Numbers for Easy Retrieval
 								</p>
 								<p className="lg:max-w-lg mt-4 text-slate-gray">
@@ -23,11 +32,19 @@ const Features = () => {
 								<div className="w-[100%] mt-5 ">
 									<img src={automaten} alt=""/>
 								</div>
-							</div>
 							</Fade>
+							</div>
+							<div className="p-8 bg-gray-100 rounded-[20px] shadow-[#0080807a] shadow-xl px-10 py-12">
 							<Slide direction="right">
-							<div className="p-8 bg-gray-100 rounded-[40px]">
-								<p className="text-lg font-bold">
+								<div className="w-11 h-11 flex justify-center items-center bg-white rounded-full mb-4">
+									<img
+										src={navbg2}
+										width={34}
+										height={34}
+										className="animate-spin "
+									/>
+								</div>
+								<p className="text-2xl font-bold">
 									Secure Database Management
 								</p>
 								<p className="lg:max-w-lg mt-4 text-slate-gray">
@@ -36,12 +53,20 @@ const Features = () => {
 								<div className="w-[100%] mt-5 ">
 									<img src={automaten} alt=""/>
 								</div>
-							</div>
 							</Slide>
+							</div>
 						</div>
+							<div className="p-8 bg-gray-100 rounded-[20px] shadow-[#0080807a] shadow-xl px-10 py-12">
 							<Slide direction="down">
-							<div className="p-8 bg-gray-100 rounded-[40px]">
-								<p className="text-lg font-bold">
+								<div className="w-11 h-11 flex justify-center items-center bg-white rounded-full mb-4">
+									<img
+										src={navbg2}
+										width={34}
+										height={34}
+										className="animate-spin "
+									/>
+								</div>
+								<p className="text-2xl font-bold">
 									Automated Notifications
 								</p>
 								<p className=" mt-4 text-slate-gray">
@@ -50,20 +75,9 @@ const Features = () => {
 								<div className="w-[100%] mt-5 ">
 									<img src={automaten} alt=""/>
 								</div>
-							</div>
 							</Slide>
+							</div>
 					</div>
-				{/* </Slide> */}
-				{/* <Slide direction="left">
-					<div
-						className="mt-16 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 grid-cols-2 sm:gap-4 gap-4
-"
-					>
-						{products.map((product) => (
-							<PopularProductCard key={product.name} {...product} />
-						))}
-					</div>
-				</Slide> */}
 			</section>
 		</Fade>
 	);

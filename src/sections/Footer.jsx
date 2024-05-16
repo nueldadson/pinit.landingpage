@@ -13,14 +13,12 @@ const Footer = () => {
 							<img
 								src={footerLogo}
 								alt="logo"
-								width={150}
-								height={46}
+								width={175}
 								className="m-0"
 							/>
 						</a>
 						<p className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-							Get Ready for the New Season with Natchies Merch. Discover Your
-							Ideal Fit In-Store. Unlock Exclusive Rewards.
+							Be the first to know when PinIt launches! Sign up for updates and join our community of users who never lose anything again
 						</p>
 						<div className="flex items-center gap-5 mt-8">
 							{socialMedia.map((icon) => (
@@ -64,7 +62,7 @@ const Footer = () => {
 							height={20}
 							className="rounded-full m-0"
 						/>
-						<p>Copyright. All rights reserved.</p>
+						<p>Copyright Information: "© 2024 PinIt. All rights reserved</p>
 					</div>
 					<p className="font-montserrat cursor-pointer">Terms & Conditions</p>
 				</div>

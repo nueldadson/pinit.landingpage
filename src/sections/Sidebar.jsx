@@ -1,4 +1,4 @@
-import { headerLogo } from "../assets/images";
+import { footerLogo } from "../assets/images";
 import {
 	SidebarContainer,
 	Icon,
@@ -12,15 +12,16 @@ import {
 	TwitterIcon,
 } from "./Sidebarelements";
 import { HashLink as Link } from "react-router-hash-link";
+import './Sidebar.css';
 
 const Sidebar = ({ isOpen, toggle }) => {
 	return (
 		<>
-			<SidebarContainer isOpen={isOpen} onClick={toggle}>
+			<SidebarContainer  isOpen={isOpen} onClick={toggle} className="containerr">
 				<img
-					src={headerLogo}
+					src={footerLogo}
 					alt="logo"
-					className="mt-1 w-[250px] h-[50px] mt-8 ml-8 absolute"
+					className=" w-[150px] mt-8 ml-6 absolute"
 				/>
 				<Icon onClick={toggle} className="mr-8 mt-6">
 					<CloseIcon />
@@ -28,16 +29,19 @@ const Sidebar = ({ isOpen, toggle }) => {
 				<SidebarContent>
 					<SidebarMenu>
 						{/* <Link smooth to="/"> */}
+						<SidebarLink onClick={toggle} href="#features">
+							Features
+						</SidebarLink>
 						<SidebarLink onClick={toggle} href="#about-us">
 							About Us
 						</SidebarLink>
 						{/* </Link> */}
 						{/* <Link smooth to="/"> */}
-						<SidebarLink onClick={toggle} href="#products">
-							Product
+						<SidebarLink onClick={toggle} href="#faqs">
+							FAQs
 						</SidebarLink>
 						<SidebarLink onClick={toggle} href="#contact-us">
-							Contact
+							Contact Us
 						</SidebarLink>
 						{/* </Link> */}
 						{/* <Link smooth to="/"> */}
@@ -45,18 +49,10 @@ const Sidebar = ({ isOpen, toggle }) => {
 							onClick={toggle}
 							href="https://aquamarine-chaja-0119a9.netlify.app/"
 						>
-							Sign In
+							Join The Waitlist
 						</SidebarLink>
-						<SidebarLink
-							onClick={toggle}
-							href="https://aquamarine-chaja-0119a9.netlify.app/"
-							className="pb-8"
-						>
-							Explore Now
-						</SidebarLink>
-						{/* </Link> */}
 					</SidebarMenu>
-					<SidebarIcon>
+					<SidebarIcon className="mt-8">
 						<LinkedinIcon />
 						<InstagramIcon />
 						<TwitterIcon />
