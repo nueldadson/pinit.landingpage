@@ -28,7 +28,8 @@ const App = () => {
           />
         ),
         {
-          autoClose: false,
+          autoClose: true,
+		  timer: 4,
 		  position:"bottom-center",
 		   // Disable auto-close to allow swipe to dismiss
         }
